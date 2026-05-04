@@ -24,7 +24,7 @@ export default function ServiceGebiet() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div className="flex-1">
-            <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>
+            <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--primary)" }}>
               Service-Gebiet
             </p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6" style={{ color: "var(--text)" }}>
@@ -52,9 +52,9 @@ export default function ServiceGebiet() {
               <span
                 className="px-3 py-1.5 rounded-full text-sm font-bold"
                 style={{
-                  background: "rgba(234,123,60,0.15)",
-                  border: "1px solid rgba(234,123,60,0.3)",
-                  color: "var(--accent)",
+                  background: "rgba(2,82,150,0.08)",
+                  border: "1px solid rgba(2,82,150,0.2)",
+                  color: "var(--primary)",
                 }}
               >
                 + deutschlandweit auf Anfrage
@@ -65,7 +65,7 @@ export default function ServiceGebiet() {
           <div
             className="flex-shrink-0 w-full md:w-72 p-8 rounded-2xl text-center"
             style={{
-              background: "var(--surface)",
+              background: "var(--bg)",
               border: "1px solid var(--border)",
             }}
           >

@@ -24,7 +24,7 @@ export default function Nav() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled ? "rgba(8,14,28,0.95)" : "transparent",
+        background: scrolled ? "rgba(255,255,255,0.96)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
       }}
@@ -33,7 +33,7 @@ export default function Nav() {
         <a href="#" className="flex items-center gap-2 group">
           <div
             className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-black text-sm"
-            style={{ background: "var(--accent)" }}
+            style={{ background: "var(--primary)" }}
           >
             S
           </div>
@@ -52,7 +52,7 @@ export default function Nav() {
               href={l.href}
               className="px-4 py-2 text-sm font-medium rounded-lg transition-colors"
               style={{ color: "var(--muted)" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--primary)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
             >
               {l.label}
@@ -84,7 +84,7 @@ export default function Nav() {
       {open && (
         <div
           className="md:hidden px-5 pb-5 pt-2 flex flex-col gap-1"
-          style={{ background: "rgba(8,14,28,0.98)", borderTop: "1px solid var(--border)" }}
+          style={{ background: "rgba(255,255,255,0.98)", borderTop: "1px solid var(--border)" }}
         >
           {links.map((l) => (
             <a

@@ -4,36 +4,33 @@ export default function CTASection() {
   return (
     <section
       className="py-24 px-5"
-      style={{
-        background:
-          "linear-gradient(135deg, var(--surface) 0%, var(--bg) 100%)",
-      }}
+      style={{ background: "var(--bg)" }}
     >
       <div className="max-w-4xl mx-auto">
         <div
           className="relative overflow-hidden rounded-3xl p-10 md:p-16 text-center"
           style={{
-            background: "linear-gradient(135deg, rgba(234,123,60,0.15) 0%, rgba(11,102,194,0.1) 100%)",
-            border: "1.5px solid rgba(234,123,60,0.25)",
+            background: "linear-gradient(135deg, rgba(2,82,150,0.07) 0%, rgba(2,82,150,0.03) 100%)",
+            border: "1.5px solid rgba(2,82,150,0.18)",
           }}
         >
           <div
             className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-1"
             style={{
-              background: "linear-gradient(90deg, transparent, var(--accent), transparent)",
-              opacity: 0.6,
+              background: "linear-gradient(90deg, transparent, var(--primary), transparent)",
+              opacity: 0.5,
             }}
           />
 
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold mb-6 border"
             style={{
-              background: "rgba(234,123,60,0.1)",
-              borderColor: "rgba(234,123,60,0.3)",
-              color: "var(--accent)",
+              background: "rgba(2,82,150,0.08)",
+              borderColor: "rgba(2,82,150,0.2)",
+              color: "var(--primary)",
             }}
           >
-            <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--accent)" }} />
+            <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--primary)" }} />
             Kostenlose Erstberatung
           </div>
 
@@ -56,7 +53,7 @@ export default function CTASection() {
               className="flex items-center gap-3 px-8 py-4 rounded-xl text-white font-bold text-lg transition-all w-full sm:w-auto justify-center"
               style={{
                 background: "var(--accent)",
-                boxShadow: "0 4px 24px rgba(234,123,60,0.35)",
+                boxShadow: "0 4px 24px rgba(234,123,60,0.3)",
               }}
             >
               <Phone size={20} />

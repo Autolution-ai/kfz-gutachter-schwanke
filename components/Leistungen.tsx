@@ -16,7 +16,7 @@ const leistungen = [
     ],
     cta: "Jetzt melden",
     href: "tel:033283376770",
-    accent: true,
+    featured: true,
   },
   {
     icon: TrendingUp,
@@ -31,7 +31,7 @@ const leistungen = [
     ],
     cta: "Anfrage stellen",
     href: "tel:033283376770",
-    accent: false,
+    featured: false,
   },
   {
     icon: Shield,
@@ -46,7 +46,7 @@ const leistungen = [
     ],
     cta: "Beratung anfragen",
     href: "tel:033283376770",
-    accent: false,
+    featured: false,
   },
 ];
 
@@ -62,7 +62,7 @@ export default function Leistungen() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--primary)" }}>
             Leistungen
           </p>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
@@ -81,18 +81,18 @@ export default function Leistungen() {
                 key={i}
                 className="flex flex-col p-8 rounded-2xl transition-all group"
                 style={{
-                  background: l.accent ? "rgba(234,123,60,0.06)" : "var(--surface)",
-                  border: l.accent ? "1.5px solid rgba(234,123,60,0.25)" : "1px solid var(--border)",
+                  background: l.featured ? "rgba(2,82,150,0.05)" : "var(--surface)",
+                  border: l.featured ? "1.5px solid rgba(2,82,150,0.2)" : "1px solid var(--border)",
                 }}
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
                   style={{
-                    background: l.accent ? "rgba(234,123,60,0.2)" : "var(--surface-2)",
-                    border: l.accent ? "1px solid rgba(234,123,60,0.3)" : "1px solid var(--border-2)",
+                    background: l.featured ? "rgba(2,82,150,0.12)" : "var(--surface-2)",
+                    border: l.featured ? "1px solid rgba(2,82,150,0.2)" : "1px solid var(--border-2)",
                   }}
                 >
-                  <Icon size={22} style={{ color: "var(--accent)" }} />
+                  <Icon size={22} style={{ color: "var(--primary)" }} />
                 </div>
 
                 <h3 className="text-xl font-bold mb-3" style={{ color: "var(--text)" }}>
@@ -105,7 +105,7 @@ export default function Leistungen() {
                 <ul className="flex flex-col gap-2 mb-8 flex-1">
                   {l.bullets.map((b) => (
                     <li key={b} className="flex items-center gap-2 text-sm" style={{ color: "var(--text)" }}>
-                      <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--accent)" }} />
+                      <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--primary)" }} />
                       {b}
                     </li>
                   ))}
@@ -113,27 +113,13 @@ export default function Leistungen() {
 
                 <a
                   href={l.href}
-                  className="flex items-center justify-center py-3 px-6 rounded-xl text-sm font-semibold transition-all mt-auto"
-                  style={
-                    l.accent
-                      ? { background: "var(--accent)", color: "#fff" }
-                      : { border: "1.5px solid var(--border-2)", color: "var(--text)" }
-                  }
+                  className="flex items-center justify-center py-3 px-6 rounded-xl text-sm font-semibold transition-all mt-auto text-white"
+                  style={{ background: "var(--accent)" }}
                   onMouseEnter={(e) => {
-                    if (l.accent) {
-                      e.currentTarget.style.background = "var(--accent-hover)";
-                    } else {
-                      e.currentTarget.style.borderColor = "var(--accent)";
-                      e.currentTarget.style.background = "rgba(234,123,60,0.08)";
-                    }
+                    e.currentTarget.style.background = "var(--accent-hover)";
                   }}
                   onMouseLeave={(e) => {
-                    if (l.accent) {
-                      e.currentTarget.style.background = "var(--accent)";
-                    } else {
-                      e.currentTarget.style.borderColor = "var(--border-2)";
-                      e.currentTarget.style.background = "transparent";
-                    }
+                    e.currentTarget.style.background = "var(--accent)";
                   }}
                 >
                   {l.cta}

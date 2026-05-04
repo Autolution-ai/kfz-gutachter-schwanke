@@ -11,14 +11,14 @@ export default function UeberMarco() {
     <section
       id="ueber-uns"
       className="py-24 px-5"
-      style={{ background: "var(--surface)" }}
+      style={{ background: "var(--bg)" }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div
             className="flex-shrink-0 w-full md:w-64 h-64 rounded-2xl flex items-center justify-center text-8xl select-none"
             style={{
-              background: "linear-gradient(135deg, var(--surface-2) 0%, var(--bg) 100%)",
+              background: "linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%)",
               border: "1px solid var(--border-2)",
             }}
           >
@@ -26,7 +26,7 @@ export default function UeberMarco() {
           </div>
 
           <div className="flex-1">
-            <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>
+            <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--primary)" }}>
               Über mich
             </p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6" style={{ color: "var(--text)" }}>
@@ -46,9 +46,9 @@ export default function UeberMarco() {
                 <div key={text} className="flex items-center gap-3">
                   <div
                     className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(234,123,60,0.15)", border: "1px solid rgba(234,123,60,0.2)" }}
+                    style={{ background: "rgba(2,82,150,0.1)", border: "1px solid rgba(2,82,150,0.15)" }}
                   >
-                    <Icon size={16} style={{ color: "var(--accent)" }} />
+                    <Icon size={16} style={{ color: "var(--primary)" }} />
                   </div>
                   <span className="font-medium" style={{ color: "var(--text)" }}>
                     {text}

@@ -18,7 +18,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(11,102,194,0.18) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(2,82,150,0.07) 0%, transparent 70%)",
         }}
       />
       <div
@@ -30,14 +30,14 @@ export default function Hero() {
         <div
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold mb-8 border"
           style={{
-            background: "rgba(234,123,60,0.1)",
-            borderColor: "rgba(234,123,60,0.3)",
-            color: "var(--accent)",
+            background: "rgba(2,82,150,0.07)",
+            borderColor: "rgba(2,82,150,0.2)",
+            color: "var(--primary)",
           }}
         >
           <span
             className="w-1.5 h-1.5 rounded-full animate-pulse"
-            style={{ background: "var(--accent)" }}
+            style={{ background: "var(--primary)" }}
           />
           Verfügbar in Berlin & Brandenburg
         </div>
@@ -50,7 +50,7 @@ export default function Hero() {
           <br />
           <span
             style={{
-              background: "linear-gradient(135deg, var(--accent) 0%, #F5A623 100%)",
+              background: "linear-gradient(135deg, var(--primary) 0%, #0B66C2 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -71,12 +71,12 @@ export default function Hero() {
               key={b}
               className="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-full"
               style={{
-                background: "rgba(240,244,250,0.06)",
+                background: "rgba(2,82,150,0.06)",
                 border: "1px solid var(--border-2)",
                 color: "var(--text)",
               }}
             >
-              <CheckCircle2 size={13} style={{ color: "var(--accent)" }} />
+              <CheckCircle2 size={13} style={{ color: "var(--primary)" }} />
               {b}
             </span>
           ))}
@@ -88,17 +88,17 @@ export default function Hero() {
             className="flex items-center gap-3 px-8 py-4 rounded-xl text-white font-bold text-lg transition-all shadow-lg"
             style={{
               background: "var(--accent)",
-              boxShadow: "0 4px 24px rgba(234,123,60,0.35)",
+              boxShadow: "0 4px 24px rgba(234,123,60,0.3)",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = "var(--accent-hover)";
               e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 8px 32px rgba(234,123,60,0.45)";
+              e.currentTarget.style.boxShadow = "0 8px 32px rgba(234,123,60,0.4)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = "var(--accent)";
               e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 4px 24px rgba(234,123,60,0.35)";
+              e.currentTarget.style.boxShadow = "0 4px 24px rgba(234,123,60,0.3)";
             }}
           >
             <Phone size={20} />
@@ -114,8 +114,8 @@ export default function Hero() {
               color: "var(--text)",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "var(--accent)";
-              e.currentTarget.style.background = "rgba(234,123,60,0.08)";
+              e.currentTarget.style.borderColor = "var(--primary)";
+              e.currentTarget.style.background = "rgba(2,82,150,0.05)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = "var(--border-2)";

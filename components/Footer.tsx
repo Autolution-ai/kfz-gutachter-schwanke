@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div
                 className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-black text-sm"
-                style={{ background: "var(--accent)" }}
+                style={{ background: "var(--primary)" }}
               >
                 S
               </div>
@@ -41,10 +41,10 @@ export default function Footer() {
                 href="tel:033283376770"
                 className="flex items-center gap-2 text-sm transition-colors"
                 style={{ color: "var(--muted)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--primary)")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
               >
-                <Phone size={14} style={{ color: "var(--accent)" }} />
+                <Phone size={14} style={{ color: "var(--primary)" }} />
                 03328 / 337 67 70
               </a>
               <a
@@ -60,7 +60,7 @@ export default function Footer() {
                 WhatsApp: 0172 / 383 13 79
               </a>
               <div className="flex items-start gap-2 text-sm" style={{ color: "var(--muted)" }}>
-                <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: "var(--accent)" }} />
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: "var(--primary)" }} />
                 <span>Teltow, Brandenburg · Vor-Ort in Berlin & Brandenburg</span>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function Footer() {
             <a
               href="/impressum"
               className="transition-colors"
-              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--primary)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
             >
               Impressum
@@ -99,7 +99,7 @@ export default function Footer() {
             <a
               href="/datenschutz"
               className="transition-colors"
-              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--primary)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
             >
               Datenschutz

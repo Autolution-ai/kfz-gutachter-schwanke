@@ -39,7 +39,7 @@ export default function Prozess() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--primary)" }}>
             So funktioniert es
           </p>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
@@ -67,29 +67,29 @@ export default function Prozess() {
                   key={i}
                   className="relative flex flex-col items-center text-center p-6 rounded-2xl transition-all"
                   style={{
-                    background: step.highlight ? "rgba(234,123,60,0.08)" : "var(--surface)",
-                    border: step.highlight ? "1.5px solid rgba(234,123,60,0.3)" : "1px solid var(--border)",
+                    background: step.highlight ? "rgba(2,82,150,0.06)" : "var(--surface)",
+                    border: step.highlight ? "1.5px solid rgba(2,82,150,0.25)" : "1px solid var(--border)",
                   }}
                 >
                   <div
                     className="relative z-10 w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
                     style={{
                       background: step.highlight
-                        ? "linear-gradient(135deg, var(--accent), #F5A623)"
+                        ? "linear-gradient(135deg, var(--primary), #0B66C2)"
                         : "var(--surface-2)",
                       border: step.highlight ? "none" : "1px solid var(--border-2)",
-                      boxShadow: step.highlight ? "0 4px 20px rgba(234,123,60,0.3)" : "none",
+                      boxShadow: step.highlight ? "0 4px 20px rgba(2,82,150,0.2)" : "none",
                     }}
                   >
                     <Icon
                       size={24}
-                      color={step.highlight ? "#fff" : "var(--accent)"}
+                      color={step.highlight ? "#fff" : "var(--primary)"}
                     />
                   </div>
 
                   <div
                     className="absolute top-3 right-4 text-5xl font-black select-none"
-                    style={{ color: step.highlight ? "rgba(234,123,60,0.15)" : "rgba(240,244,250,0.04)" }}
+                    style={{ color: step.highlight ? "rgba(2,82,150,0.1)" : "rgba(13,24,41,0.05)" }}
                   >
                     {step.nr}
                   </div>
@@ -107,7 +107,7 @@ export default function Prozess() {
                   {step.highlight && (
                     <span
                       className="mt-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold"
-                      style={{ background: "rgba(234,123,60,0.2)", color: "var(--accent)" }}
+                      style={{ background: "rgba(2,82,150,0.12)", color: "var(--primary)" }}
                     >
                       ⚡ Ø 76 Stunden
                     </span>

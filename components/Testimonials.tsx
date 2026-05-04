@@ -38,11 +38,11 @@ export default function Testimonials() {
   return (
     <section
       className="py-24 px-5"
-      style={{ background: "var(--bg)" }}
+      style={{ background: "var(--surface)" }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--primary)" }}>
             Kundenstimmen
           </p>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
@@ -56,7 +56,7 @@ export default function Testimonials() {
               key={i}
               className="flex flex-col p-7 rounded-2xl"
               style={{
-                background: "var(--surface)",
+                background: "var(--bg)",
                 border: "1px solid var(--border)",
               }}
             >
@@ -69,8 +69,8 @@ export default function Testimonials() {
                 style={{ borderTop: "1px solid var(--border)" }}
               >
                 <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0"
-                  style={{ background: "var(--surface-2)", color: "var(--accent)", border: "1px solid var(--border-2)" }}
+                  className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 text-white"
+                  style={{ background: "var(--primary)" }}
                 >
                   {r.name[0]}
                 </div>

@@ -29,11 +29,11 @@ export default function TrustZahlen() {
   return (
     <section
       className="py-24 px-5"
-      style={{ background: "var(--bg)" }}
+      style={{ background: "var(--surface)" }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>
+          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "var(--primary)" }}>
             Warum Schwanke?
           </p>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
@@ -47,20 +47,20 @@ export default function TrustZahlen() {
               key={i}
               className="flex flex-col items-center text-center p-8 rounded-2xl"
               style={{
-                background: "var(--surface)",
+                background: "var(--bg)",
                 border: "1px solid var(--border)",
               }}
             >
               <div className="flex items-end gap-1 mb-2">
                 <span
                   className="text-5xl md:text-6xl font-black leading-none"
-                  style={{ color: "var(--accent)" }}
+                  style={{ color: "var(--primary)" }}
                 >
                   {z.value}
                 </span>
                 <span
                   className="text-2xl font-bold mb-1"
-                  style={{ color: "var(--accent)" }}
+                  style={{ color: "var(--primary)" }}
                 >
                   {z.unit}
                 </span>
