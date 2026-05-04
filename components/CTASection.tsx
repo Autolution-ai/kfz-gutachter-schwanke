@@ -52,8 +52,8 @@ export default function CTASection() {
               href="tel:033283376770"
               className="flex items-center gap-3 px-8 py-4 rounded-xl text-white font-bold text-lg transition-all w-full sm:w-auto justify-center"
               style={{
-                background: "var(--accent)",
-                boxShadow: "0 4px 24px rgba(234,123,60,0.3)",
+                background: "var(--primary)",
+                boxShadow: "0 4px 24px rgba(2,82,150,0.25)",
               }}
             >
               <Phone size={20} />
@@ -63,13 +63,13 @@ export default function CTASection() {
               href="https://wa.me/491723831379"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all w-full sm:w-auto justify-center"
+              className="flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all w-full sm:w-auto justify-center text-white"
               style={{
-                border: "1.5px solid var(--border-2)",
-                color: "var(--text)",
+                background: "var(--primary)",
+                opacity: 0.8,
               }}
             >
-              <MessageCircle size={20} style={{ color: "#25D366" }} />
+              <MessageCircle size={20} />
               WhatsApp
             </a>
           </div>

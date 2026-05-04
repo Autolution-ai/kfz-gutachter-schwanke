@@ -43,7 +43,7 @@ export default function Hero() {
         </div>
 
         <h1
-          className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight"
+          className="text-5xl md:text-7xl font-black tracking-tight mb-10 leading-tight"
           style={{ color: "var(--text)" }}
         >
           Unfallschaden?
@@ -82,23 +82,23 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
             href="tel:033283376770"
             className="flex items-center gap-3 px-8 py-4 rounded-xl text-white font-bold text-lg transition-all shadow-lg"
             style={{
-              background: "var(--accent)",
-              boxShadow: "0 4px 24px rgba(234,123,60,0.3)",
+              background: "var(--primary)",
+              boxShadow: "0 4px 24px rgba(2,82,150,0.25)",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "var(--accent-hover)";
+              e.currentTarget.style.background = "var(--primary-hover)";
               e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 8px 32px rgba(234,123,60,0.4)";
+              e.currentTarget.style.boxShadow = "0 8px 32px rgba(2,82,150,0.35)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "var(--accent)";
+              e.currentTarget.style.background = "var(--primary)";
               e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 4px 24px rgba(234,123,60,0.3)";
+              e.currentTarget.style.boxShadow = "0 4px 24px rgba(2,82,150,0.25)";
             }}
           >
             <Phone size={20} />
@@ -108,21 +108,22 @@ export default function Hero() {
             href="https://wa.me/491723831379"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all"
+            className="flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all text-white"
             style={{
-              border: "1.5px solid var(--border-2)",
-              color: "var(--text)",
+              background: "var(--primary)",
+              boxShadow: "0 4px 24px rgba(2,82,150,0.2)",
+              opacity: 0.85,
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "var(--primary)";
-              e.currentTarget.style.background = "rgba(2,82,150,0.05)";
+              e.currentTarget.style.opacity = "1";
+              e.currentTarget.style.transform = "translateY(-2px)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "var(--border-2)";
-              e.currentTarget.style.background = "transparent";
+              e.currentTarget.style.opacity = "0.85";
+              e.currentTarget.style.transform = "translateY(0)";
             }}
           >
-            <MessageCircle size={20} style={{ color: "#25D366" }} />
+            <MessageCircle size={20} />
             WhatsApp schreiben
           </a>
         </div>

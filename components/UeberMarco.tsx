@@ -16,13 +16,17 @@ export default function UeberMarco() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div
-            className="flex-shrink-0 w-full md:w-64 h-64 rounded-2xl flex items-center justify-center text-8xl select-none"
+            className="flex-shrink-0 w-full md:w-64 h-64 rounded-2xl flex flex-col items-center justify-center gap-3"
             style={{
-              background: "linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%)",
-              border: "1px solid var(--border-2)",
+              background: "var(--surface)",
+              border: "2px dashed var(--border-2)",
             }}
           >
-            👨‍💼
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span className="text-sm font-medium" style={{ color: "var(--muted)" }}>Foto Marco Schwanke</span>
           </div>
 
           <div className="flex-1">

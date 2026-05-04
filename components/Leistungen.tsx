@@ -114,12 +114,12 @@ export default function Leistungen() {
                 <a
                   href={l.href}
                   className="flex items-center justify-center py-3 px-6 rounded-xl text-sm font-semibold transition-all mt-auto text-white"
-                  style={{ background: "var(--accent)" }}
+                  style={{ background: "var(--primary)" }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--accent-hover)";
+                    e.currentTarget.style.background = "var(--primary-hover)";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "var(--accent)";
+                    e.currentTarget.style.background = "var(--primary)";
                   }}
                 >
                   {l.cta}

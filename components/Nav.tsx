@@ -63,9 +63,9 @@ export default function Nav() {
         <a
           href="tel:033283376770"
           className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all"
-          style={{ background: "var(--accent)" }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "var(--accent-hover)")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "var(--accent)")}
+          style={{ background: "var(--primary)" }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = "var(--primary-hover)")}
+          onMouseLeave={(e) => (e.currentTarget.style.background = "var(--primary)")}
         >
           <Phone size={15} />
           Jetzt anrufen
@@ -100,7 +100,7 @@ export default function Nav() {
           <a
             href="tel:033283376770"
             className="mt-3 flex items-center justify-center gap-2 py-3 rounded-lg text-sm font-semibold text-white"
-            style={{ background: "var(--accent)" }}
+            style={{ background: "var(--primary)" }}
           >
             <Phone size={15} />
             Jetzt anrufen
