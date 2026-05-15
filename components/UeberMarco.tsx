@@ -21,7 +21,7 @@ export default function UeberMarco() {
             style={{ boxShadow: "0 12px 40px rgba(2,82,150,0.1), 0 4px 12px rgba(0,0,0,0.06)" }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=85"
+              src="https://image.jimcdn.com/app/cms/image/transf/dimension=354x10000:format=jpg/path/s03b8ffe50e0f5273/image/i812dac85df8f864a/version/1753359480/image.jpg"
               alt="Marco Schwanke – KFZ-Sachverständiger"
               width={600}
               height={600}
