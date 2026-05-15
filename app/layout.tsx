@@ -65,10 +65,13 @@ const localBusinessSchema = {
   telephone: "+4933283376770",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Heinrich Heine Str. 2",
+    postalCode: "14513",
     addressLocality: "Teltow",
     addressRegion: "Brandenburg",
     addressCountry: "DE",
   },
+  email: "sv.buero.schwanke@gmx.de",
   geo: {
     "@type": "GeoCoordinates",
     latitude: 52.4006,

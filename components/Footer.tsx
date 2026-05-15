@@ -61,7 +61,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2 text-sm" style={{ color: "var(--muted)" }}>
                 <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: "var(--primary)" }} />
-                <span>Teltow, Brandenburg · Vor-Ort in Berlin & Brandenburg</span>
+                <span>Heinrich Heine Str. 2, 14513 Teltow</span>
               </div>
             </div>
           </div>

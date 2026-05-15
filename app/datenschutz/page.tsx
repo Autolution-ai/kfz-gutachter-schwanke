@@ -34,10 +34,10 @@ export default function Datenschutz() {
             <p>
               Marco Schwanke<br />
               KFZ-Sachverständigenbüro<br />
-              [Straße und Hausnummer]<br />
+              Heinrich Heine Str. 2<br />
               14513 Teltow<br />
               Telefon: 03328 / 337 67 70<br />
-              E-Mail: [E-Mail-Adresse]
+              E-Mail: sv.buero.schwanke@gmx.de
             </p>
           </section>
 
