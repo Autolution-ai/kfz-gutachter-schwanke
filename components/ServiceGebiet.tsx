@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const orte = [
   "Berlin",
   "Potsdam",
@@ -69,15 +71,14 @@ export default function ServiceGebiet() {
               border: "1px solid var(--border)",
             }}
           >
-            <div
-              className="w-full h-40 rounded-xl mb-4 flex flex-col items-center justify-center gap-2"
-              style={{ background: "var(--surface-2)", border: "2px dashed var(--border-2)" }}
-            >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-                <path d="M21 15l-5-5L5 21"/>
-              </svg>
-              <span className="text-xs font-medium" style={{ color: "var(--muted)" }}>Foto einfügen</span>
+            <div className="w-full rounded-xl mb-4 overflow-hidden" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
+              <Image
+                src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&q=80"
+                alt="KFZ-Gutachter fährt zum Kunden"
+                width={600}
+                height={300}
+                className="w-full h-40 object-cover"
+              />
             </div>
             <p className="text-2xl font-black mb-2" style={{ color: "var(--text)" }}>
               Anfahrt kostenlos

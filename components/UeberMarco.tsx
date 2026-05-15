@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Award, Users, Clock } from "lucide-react";
 
 const punkte = [
@@ -16,17 +17,17 @@ export default function UeberMarco() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div
-            className="flex-shrink-0 w-full md:w-64 h-64 rounded-2xl flex flex-col items-center justify-center gap-3"
-            style={{
-              background: "var(--surface)",
-              border: "2px dashed var(--border-2)",
-            }}
+            className="flex-shrink-0 w-full md:w-72 rounded-2xl overflow-hidden"
+            style={{ boxShadow: "0 12px 40px rgba(2,82,150,0.1), 0 4px 12px rgba(0,0,0,0.06)" }}
           >
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
-              <path d="M21 15l-5-5L5 21"/>
-            </svg>
-            <span className="text-sm font-medium" style={{ color: "var(--muted)" }}>Foto Marco Schwanke</span>
+            <Image
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=85"
+              alt="Marco Schwanke – KFZ-Sachverständiger"
+              width={600}
+              height={600}
+              className="w-full h-auto object-cover"
+              style={{ aspectRatio: "1/1" }}
+            />
           </div>
 
           <div className="flex-1">
