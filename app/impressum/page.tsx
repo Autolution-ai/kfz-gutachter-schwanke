@@ -49,13 +49,9 @@ export default function Impressum() {
 
           <section>
             <h2 className="text-base font-bold mb-3" style={{ color: "var(--text)" }}>
-              Berufsbezeichnung und berufsrechtliche Regelungen
+              Registergericht
             </h2>
-            <p>
-              Berufsbezeichnung: Öffentlich bestellter und vereidigter Sachverständiger (sofern zutreffend)
-              bzw. zertifizierter KFZ-Sachverständiger.<br />
-              Zuständige Kammer: [zuständige Kammer / Verband eintragen]
-            </p>
+            <p>Potsdam</p>
           </section>
 
           <section>
@@ -64,8 +60,15 @@ export default function Impressum() {
             </h2>
             <p>
               Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br />
-              [USt-ID eintragen, sofern vorhanden]
+              DE327999216
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-base font-bold mb-3" style={{ color: "var(--text)" }}>
+              Steuernummer
+            </h2>
+            <p>046/273/00846</p>
           </section>
 
           <section>
