@@ -1,3 +1,5 @@
+"use client";
+
 import { Phone, MessageCircle } from "lucide-react";
 
 export default function CTASection() {
@@ -63,13 +65,21 @@ export default function CTASection() {
               href="https://wa.me/491723831379"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all w-full sm:w-auto justify-center text-white"
+              className="flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all w-full sm:w-auto justify-center"
               style={{
-                background: "var(--primary)",
-                opacity: 0.8,
+                border: "1.5px solid rgba(2,82,150,0.35)",
+                color: "var(--text)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "var(--primary)";
+                e.currentTarget.style.background = "rgba(2,82,150,0.06)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "rgba(2,82,150,0.35)";
+                e.currentTarget.style.background = "transparent";
               }}
             >
-              <MessageCircle size={20} />
+              <MessageCircle size={20} style={{ color: "#25D366" }} />
               WhatsApp
             </a>
           </div>
