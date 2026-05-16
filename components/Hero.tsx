@@ -10,7 +10,7 @@ const badges = [
 
 const stats = [
   { value: "76", unit: "Std.", label: "Ø Fertigstellungszeit", sub: "Von Besichtigung bis Gutachten" },
-  { value: "~20", unit: "Jahre", label: "Branchenerfahrung", sub: "In der Automobilbranche" },
+  { value: "20", unit: "Jahre", label: "Branchenerfahrung", sub: "In der Automobilbranche" },
   { value: "0", unit: "€", label: "Kosten für Sie", sub: "Bei unverschuldetem Unfall" },
 ];
 

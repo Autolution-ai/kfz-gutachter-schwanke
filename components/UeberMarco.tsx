@@ -25,8 +25,7 @@ export default function UeberMarco() {
               alt="Marco Schwanke – KFZ-Sachverständiger"
               width={600}
               height={600}
-              className="w-full h-auto object-cover"
-              style={{ aspectRatio: "1/1" }}
+              className="w-full h-auto"
             />
           </div>
 
