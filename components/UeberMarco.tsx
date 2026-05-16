@@ -3,7 +3,7 @@ import { Award, Users, Clock } from "lucide-react";
 
 const punkte = [
   { icon: Award, text: "Zertifizierter KFZ-Sachverständiger" },
-  { icon: Clock, text: "Fast 20 Jahre Automobilbranche" },
+  { icon: Clock, text: "20 Jahre Automobilbranche" },
   { icon: Users, text: "Persönlicher Ansprechpartner – kein Call-Center" },
 ];
 
@@ -21,10 +21,10 @@ export default function UeberMarco() {
             style={{ boxShadow: "0 12px 40px rgba(2,82,150,0.1), 0 4px 12px rgba(0,0,0,0.06)" }}
           >
             <Image
-              src="https://image.jimcdn.com/app/cms/image/transf/dimension=354x10000:format=jpg/path/s03b8ffe50e0f5273/image/i812dac85df8f864a/version/1753359480/image.jpg"
+              src="https://image.jimcdn.com/app/cms/image/transf/dimension=800x10000:format=jpg/path/s03b8ffe50e0f5273/image/i812dac85df8f864a/version/1753359480/image.jpg"
               alt="Marco Schwanke – KFZ-Sachverständiger"
-              width={600}
-              height={600}
+              width={800}
+              height={1200}
               className="w-full h-auto"
             />
           </div>
@@ -39,7 +39,7 @@ export default function UeberMarco() {
               <span style={{ color: "var(--muted)" }}>Ihr Gutachter in der Region.</span>
             </h2>
             <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--muted)" }}>
-              Als zertifizierter KFZ-Sachverständiger mit fast zwei Jahrzehnten Erfahrung in der
+              Als zertifizierter KFZ-Sachverständiger mit 20 Jahren Erfahrung in der
               Automobilbranche kenne ich jeden Aspekt des Schadensgeschäfts. Ich beschränke mich
               nicht nur auf das Erstellen von Gutachten – ich stehe Ihnen durch den gesamten Prozess
               der Schadenregulierung mit Rat und Tat zur Seite.

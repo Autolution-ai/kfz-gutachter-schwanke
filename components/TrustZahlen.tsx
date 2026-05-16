@@ -6,7 +6,7 @@ const zahlen = [
     sub: "Vom Anruf zum fertigen Gutachten",
   },
   {
-    value: "~20",
+    value: "20",
     unit: "Jahre",
     label: "Erfahrung",
     sub: "In der Automobilbranche",
