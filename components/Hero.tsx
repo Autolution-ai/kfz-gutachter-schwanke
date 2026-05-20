@@ -157,7 +157,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-6 text-sm" style={{ color: "rgba(255,255,255,0.38)" }}>
-              Anfahrt kostenlos · Zertifizierter Sachverständiger · 20 Jahre Erfahrung
+              20 Jahre Erfahrung
             </p>
           </div>
 
